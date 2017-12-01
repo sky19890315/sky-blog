@@ -11,14 +11,16 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return redirect('index');
+});
 
-Route::get('/', 'IndexController@index');
+//Route::get('/', 'IndexController@index');
 
 Route::get('index', 'IndexController@index');
 
 Route::any('contact', 'ContactController@index');
 
 Route::any('about', 'AboutController@index');
+
+Route::any('article', 'ArticleController@index');
