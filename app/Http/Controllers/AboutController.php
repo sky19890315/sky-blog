@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class AboutController extends Controller
 {
     public function index(){
-    	echo "这是关于页";
+	    return view('about.index');
     }
 }
